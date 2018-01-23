@@ -1,0 +1,31 @@
+{
+  "name": "cryptocoins-rn-icons",
+  "version": "1.0.0",
+  "description": "Cryptocoin icons for React Native projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-font": "./node_modules/buildfont/bin/index.js -s ./node_modules/cryptocoins-icons/SVG/",
+    "build-cryptcoins-font": "./node_modules/.bin/generate-icon ./font/iconfont.css --componentName=CryptocoinIcon --fontFamily=CryptocoinIcons > ./CryptocoinIcon.js",
+    "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinsFont.ttf",
+    "clean": "rm -rf ./font",
+    "postinstall": "npm run build-font && npm run build-cryptcoins-font && npm run generate-fonts-directory && npm run clean"
+  },
+  "keywords": [
+    "coin",
+    "crypto",
+    "react-native"
+  ],
+  "author": "Artur Shinkevich",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-vector-icons": "^4.5.0",
+    "buildfont": "https://github.com/Arcanfel/buildfont",
+    "cryptocoins-icons": "^2.7.0"
+  },
+  "rnpm": {
+    "assets": [
+      "Fonts"
+    ]
+  }
+}
