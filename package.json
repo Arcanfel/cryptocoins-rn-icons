@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-font": "../buildfont/bin/index.js -s ../cryptocoins-icons/SVG/",
-    "build-cryptcoins-font": "../react-native-vector-icons/bin/generate-icon ./font/iconfont.css --componentName=CryptocoinIcon --fontFamily=CryptocoinIcons > ./CryptocoinIcon.js",
+    "build-cryptcoins-font": "../react-native-vector-icons/bin/generate-icon.js ./font/iconfont.css --componentName=CryptocoinIcon --fontFamily=CryptocoinIcons > ./CryptocoinIcon.js",
     "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinsFont.ttf",
     "clean": "rm -rf ./font",
     "postinstall": "npm run build-font && npm run build-cryptcoins-font && npm run generate-fonts-directory && npm run clean"
