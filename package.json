@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-font": "../buildfont/bin/index.js -s ../cryptocoins-icons/SVG/",
     "build-cryptcoins-font": "../.bin/generate-icon ./font/iconfont.css --componentName=CryptocoinIcon --fontFamily=CryptocoinIcons > ./CryptocoinIcon.js",
-    "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinIcons.ttf",
+    "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinIcon.ttf",
     "clean": "rm -rf ./font",
     "postinstall": "npm run build-font && npm run build-cryptcoins-font && npm run generate-fonts-directory && npm run clean"
   },
