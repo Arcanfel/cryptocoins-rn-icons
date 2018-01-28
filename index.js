@@ -289,7 +289,7 @@ const glyphMap = {
   "ZEIT": 57626
 };
 
-const iconSet = createIconSet(glyphMap, 'CryptocoinIcons', 'CryptocoinIcon.ttf');
+const iconSet = createIconSet(glyphMap, 'iconfont', 'CryptocoinIcon.ttf');
 
 export default iconSet;
 
