@@ -1,13 +1,13 @@
 {
   "name": "cryptocoins-rn-icons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Cryptocoin icons for React Native projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-font": "./node_modules/buildfont/bin/index.js -s ./node_modules/cryptocoins-icons/SVG/",
     "build-cryptcoins-font": "./node_modules/.bin/generate-icon ./font/iconfont.css --componentName=CryptocoinIcon --fontFamily=CryptocoinIcons > ./CryptocoinIcon.js",
-    "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinsFont.ttf",
+    "generate-fonts-directory": "mkdir -p ./Fonts && cp ./font/iconfont.ttf ./Fonts/CryptocoinIcons.ttf",
     "clean": "rm -rf ./font",
     "postinstall": "npm run build-font && npm run build-cryptcoins-font && npm run generate-fonts-directory && npm run clean"
   },
